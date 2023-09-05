@@ -20,7 +20,7 @@ pipeline {
 
 	stage('Build') { 
             steps { 
-               withDockerRegistry([credentialsId: "dockerlogin", url: ""]) {
+               withDockerRegistry([credentialsId: "dockerloginn", url: ""]) {
                  script{
                  app =  docker.build("chethan")
                  }
